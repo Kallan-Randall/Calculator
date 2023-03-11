@@ -10,8 +10,8 @@ const reader = readline.createInterface({
 reader.question("What would you like to calculate?", function(input){
 	const tokens = input.split(' ');
 	
-	const mathSymbol = tokens[1];
-	const num1 = Number(tokens[0]);
+	const mathSymbol = tokens[0];
+	const num1 = Number(tokens[1]);
 	const num2 = Number(tokens[2]);
 
 	console.log('mathSymbol' , mathSymbol)
